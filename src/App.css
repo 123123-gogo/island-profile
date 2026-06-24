@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f0e8;
+  min-height: 100vh;
+}
+
+.app-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 24px 16px;
+}
+
+.phone-content {
+  padding: 16px 12px 0;
+}
+
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 8px 12px;
+  font-size: 13px;
+  color: #6b5e4a;
+}
+
+.signal {
+  display: flex;
+  align-items: center;
+}
+
+.section {
+  padding: 16px 0;
+}
+
+.bio-box {
+  margin-top: 12px;
+  padding: 16px;
+  background: #fdf8f0;
+  border-radius: 16px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #5a4e3c;
+  border: 2px dashed #d4c8b0;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.skill-tag {
+  display: inline-block;
+  padding: 6px 16px;
+  background: #fdf3e0;
+  border: 2px solid #e0cfa0;
+  border-radius: 999px;
+  font-size: 13px;
+  color: #6b5e3a;
+  cursor: default;
+  transition: transform 0.15s ease;
+}
+
+.skill-tag:hover {
+  transform: scale(1.05);
+  background: #fef7e8;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+@media (min-width: 500px) {
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.project-card {
+  cursor: pointer;
+}
+
+.project-image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+.project-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #5a4e3c;
+  margin-bottom: 4px;
+}
+
+.project-desc {
+  font-size: 12px;
+  color: #8b7d6b;
+  line-height: 1.5;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.social-link {
+  color: #8b7d6b;
+  transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.social-link:hover {
+  color: #5a4e3c;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal-image {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
